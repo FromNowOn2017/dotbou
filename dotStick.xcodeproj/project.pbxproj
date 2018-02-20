@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C36FE9B8203A95A500FF9BC5 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36FE9B7203A95A500FF9BC5 /* AddViewController.swift */; };
 		C388868A203695B600FE2794 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3888689203695B600FE2794 /* AppDelegate.swift */; };
 		C388868C203695B600FE2794 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C388868B203695B600FE2794 /* FirstViewController.swift */; };
 		C388868E203695B600FE2794 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C388868D203695B600FE2794 /* SecondViewController.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C36FE9B7203A95A500FF9BC5 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		C3888686203695B600FE2794 /* dotStick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dotStick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3888689203695B600FE2794 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C388868B203695B600FE2794 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				C38886BB2037FBCB00FE2794 /* img */,
 				C388868D203695B600FE2794 /* SecondViewController.swift */,
 				C388868F203695B600FE2794 /* Main.storyboard */,
+				C36FE9B7203A95A500FF9BC5 /* AddViewController.swift */,
 				C38886B9203697C300FE2794 /* SingleViewController.swift */,
 				C3888692203695B600FE2794 /* Assets.xcassets */,
 				C3888694203695B600FE2794 /* LaunchScreen.storyboard */,
@@ -313,6 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C36FE9B8203A95A500FF9BC5 /* AddViewController.swift in Sources */,
 				C388868E203695B600FE2794 /* SecondViewController.swift in Sources */,
 				C388868A203695B600FE2794 /* AppDelegate.swift in Sources */,
 				C38886BA203697C300FE2794 /* SingleViewController.swift in Sources */,

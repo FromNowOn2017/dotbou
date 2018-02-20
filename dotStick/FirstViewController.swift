@@ -11,7 +11,7 @@ import UIKit
 class FirstViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate {
     //MARK:変数名
     var Lists = ["60","120","180","240"]
-    var List = "5"
+    var List = "60"
     
     @IBOutlet weak var mypickerView: UIPickerView!
     
@@ -40,7 +40,7 @@ class FirstViewController: UIViewController,UIPickerViewDataSource,UIPickerViewD
     }
     
     
-    
+    //テストへ移動
     @IBAction func btn(_ sender: UIButton) {
         
         performSegue(withIdentifier: "show", sender: nil)
@@ -48,12 +48,24 @@ class FirstViewController: UIViewController,UIPickerViewDataSource,UIPickerViewD
     
     //    セグエを使って次の画面へ移動する時
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        
         //        次の画面をインスタンス化(ダウンキャスト型変換)
         var dvc = segue.destination as! SingleViewController
         //        次の画面のプロパティに選択された行番号を指定
         dvc.takeTime = List
         
     }
+    
+    //セグエを使わない画面移動する
+    @IBAction func add(_ sender: UIBarButtonItem) {
+        let storyboard: UIStoryboard = self.storyboard!
+        let nextView = storyboard.instantiateViewController(withIdentifier: "add")
+        present(nextView, animated: true, completion: nil)
+        
+    }
+    
+   
     
     
 //    はじめの処理

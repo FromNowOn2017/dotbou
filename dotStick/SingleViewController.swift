@@ -38,11 +38,11 @@ class SingleViewController: UIViewController {
         let elasedTime = Date().timeIntervalSince1970 - startTime
         let flooredTimer = Int(floor(elasedTime))
         let leftTime = Int(takeTime)! - flooredTimer
-        let displayString = NSString(format:"00:%02d", leftTime)as String
+        let displayString = NSString(format:"%02d", leftTime)as String
         labelTimer.text = displayString
         //        print(labelTimer.text)
         
-        if labelTimer.text == "00:-1" {
+        if labelTimer.text == "00" {
             timer.invalidate()
             performSegue(withIdentifier: "end", sender: nil)
         }
